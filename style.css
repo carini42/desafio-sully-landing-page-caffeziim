@@ -18,14 +18,21 @@ body {
 }
 
 .cabecalho {
-  width: 1920px;
-  height: 120px;
+  width: 100%;
   background: #000000;
+}
+
+.cabecalho-largura {
+  max-width: 1520px;
+  width: 100%;
+  height: 120px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  margin: 0px auto;
 }
+
 .cabecalho-img {
   width: 199px;
   height: 32px;
@@ -72,10 +79,9 @@ body {
 }
 
 .conteudo-principal {
-  width: 1120px;
+  max-width: 1120px;
   height: 500px;
-  background: #000000;
-  margin: 57px 400px 87px 400px;
+  margin: 60px auto;
 }
 
 .banner-principal,
@@ -84,6 +90,10 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.banner-principal-escrito {
+  background: #000000;
 }
 
 .banner-principal-escrito,
@@ -154,22 +164,24 @@ body {
 }
 
 .conteudo-secundario {
-  width: 1920px;
-  height: 952px;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   background: #000000;
 }
 
+.conteudo-secundario-largura {
+  max-width: 1230px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 48px auto;
+}
+
 .conteudo-secundario-cards-01 {
-  width: 1129px;
-  height: 196px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 345px;
-  margin-top: 48px;
-  margin-bottom: 80px;
+  margin: 48px auto 80px auto;
 }
 
 .conteudo-secundario-cards-img-1,
@@ -184,8 +196,9 @@ body {
   font-size: 60px;
   line-height: 72px;
   color: #ffffff;
-  margin-bottom: 30px;
-  margin-left: 260px;
+  margin: auto auto 30px auto;
+  text-align: left;
+  width: 100%;
 }
 
 .conteudo-secundario-titulo span,
@@ -194,12 +207,9 @@ body {
 }
 
 .conteudo-secundario-cards-02 {
-  width: 1230px;
-  height: 478px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 345px;
   margin-top: 30px;
   margin-bottom: 48px;
 }
@@ -214,6 +224,10 @@ body {
   background: #ffffff;
   margin-right: 75px;
   margin-bottom: 48px;
+}
+
+.conteudo-secundario-card:nth-child(3) {
+  margin-right: 0;
 }
 
 .conteudo-secundario-card-img {
@@ -266,9 +280,15 @@ footer {
   margin-bottom: 150px;
 }
 
-.social-media img {
-  margin-bottom: 49px;
-  margin-left: 24px;
+.social-media {
+  max-width: 199px;
+  width: 100%;
+}
+
+.social-media-logo {
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .social-media-titulo {
@@ -281,7 +301,11 @@ footer {
   margin-bottom: 20px;
 }
 
-footer ul li{
+.logo-footer {
+  margin-bottom: 47px;
+}
+
+footer ul li {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;

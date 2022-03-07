@@ -18,14 +18,21 @@ body {
 }
 
 .cabecalho {
-  width: 1920px;
-  height: 120px;
+  width: 100%;
   background: #000000;
+}
+
+.cabecalho-largura {
+  max-width: 1520px;
+  width: 100%;
+  height: 120px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  margin: 0px auto;
 }
+
 .cabecalho-img {
   width: 199px;
   height: 32px;
@@ -87,16 +94,8 @@ body {
   display: flex;
 }
 
-.banner-principal-img {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
-  color: #ffffff;
-}
-
 .banner-principal-escrito {
+  margin-left: 65px;
 }
 
 .banner-principal-titulo {
@@ -115,6 +114,8 @@ body {
   font-size: 24px;
   line-height: 36px;
   color: #adadad;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .banner-principal-lista {
@@ -124,6 +125,7 @@ body {
   font-size: 24px;
   line-height: 36px;
   color: #ffffff;
+  margin-bottom: 36px;
 }
 
 .banner-principal-lista ul {
@@ -168,6 +170,72 @@ button:hover {
   color: #ffbb00;
 }
 
+.conteudo-secundario {
+  width: 100%;
+  background: #ffffff;
+}
+
+.conteudo-secundario-largura {
+  max-width: 1526px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 150px auto;
+}
+
+.avaliacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.conteudo-secundario-escrito h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 72px;
+  color: #000000;
+}
+
+.conteudo-secundario-escrito p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: justify;
+  color: #6c6c6c;
+}
+
+.conteudo-secundario-escrito h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 72px;
+  color: #000000;
+}
+
+.conteudo-secundario-escrito h3 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.conteudo-secundario-escrito h4 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 60px;
+  color: #000000;
+}
+
 footer {
   width: 1520px;
   height: 203px;
@@ -180,9 +248,15 @@ footer {
   margin-bottom: 150px;
 }
 
-.social-media img {
-  margin-bottom: 49px;
-  margin-left: 24px;
+.social-media {
+  max-width: 199px;
+  width: 100%;
+}
+
+.social-media-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .social-media-titulo {
@@ -193,6 +267,10 @@ footer {
   line-height: 40px;
   color: #000000;
   margin-bottom: 20px;
+}
+
+.logo-footer {
+  margin-bottom: 47px;
 }
 
 footer ul li {
