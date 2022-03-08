@@ -79,8 +79,7 @@ body {
 }
 
 .conteudo {
-  width: 1920px;
-  height: 828px;
+  width: 100%;
   background: #000000;
 }
 
@@ -190,16 +189,13 @@ button:hover {
   align-items: center;
 }
 
-.conteudo-secundario-escrito h1 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 72px;
-  color: #000000;
+.avaliacao-conteudo {
+  border-bottom: 4px solid #DBDBDB;
+  margin-bottom: 80px;
+  padding-bottom: 45px;
 }
 
-.conteudo-secundario-escrito p {
+.avaliacao-conteudo p {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -209,6 +205,35 @@ button:hover {
   color: #6c6c6c;
 }
 
+.avaliacao img {
+  margin-right: 5px
+}
+.estrelas-container-1 {
+  margin-bottom: 60px;
+}
+
+.conteudo-secundario-escrito h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 72px;
+  color: #000000;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.conteudo-secundario-escrito > p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: justify;
+  color: #6c6c6c;
+  margin-bottom: 84px;
+}
+
 .conteudo-secundario-escrito h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -216,6 +241,8 @@ button:hover {
   font-size: 64px;
   line-height: 72px;
   color: #000000;
+  margin-right: 16px;
+  margin-bottom: 58px;
 }
 
 .conteudo-secundario-escrito h3 {
@@ -225,6 +252,8 @@ button:hover {
   font-size: 40px;
   line-height: 60px;
   color: #000000;
+  margin-right: 25px;
+  margin-bottom: 20px;
 }
 
 .conteudo-secundario-escrito h4 {
@@ -237,15 +266,17 @@ button:hover {
 }
 
 footer {
-  width: 1520px;
-  height: 203px;
+  width: 100%;
+}
+
+.footer_conteudo {
+  max-width: 1520px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 150px;
+  margin: 0 auto 150px auto;
 }
 
 .social-media {
